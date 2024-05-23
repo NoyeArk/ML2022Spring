@@ -125,5 +125,4 @@ def save_pred(preds, file):
         writer = csv.writer(fp)
         writer.writerow(['id', 'tested_positive'])
         for i, p in enumerate(preds):
-            print(i, p)
             writer.writerow([i, p])

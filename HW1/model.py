@@ -5,7 +5,6 @@ class My_Model(nn.Module):
     def __init__(self, input_dim):
         super(My_Model, self).__init__()
 
-        # TODO: modify models's structure, be aware of dimensions.
         self.layers = nn.Sequential(
             nn.Linear(input_dim, 16),
             # nn.ReLU(),
